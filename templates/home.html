@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Fire Detection Tool</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0px;
+      border-radius: 0;
+      background-color: white;
+    }
+
+    h1 {
+      color: #2c2c51;
+      font-family: 'Trebuchet MS', sans-serif;
+      font-weight: 900;
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: #2c2c51;
+    }
+
+    label {
+      background-color: #dc3545;
+      color: white;
+      padding: 0.6rem;
+      padding-right: 30px;
+      padding-left: 30px;
+      font-family: sans-serif;
+      border-radius: 50px;
+      cursor: pointer;
+      margin: 0.4rem;
+      font-size: 20px;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    #file-chosen {
+      margin-left: 0.3rem;
+      font-family: sans-serif;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {
+      height: 450px
+    }
+
+    /* Set gray background color and 100% height */
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #f1f1f1;
+      color: white;
+      padding: 15px;
+    }
+
+    body {
+      padding-bottom: 20px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+
+      .row.content {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav style="color:white;" class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <span style="font-size:13px; color:black;padding-right: 10px; margin:10px 0 10px 0"
+        class="navbar-toggler-icon"></span>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+    </div>
+    
+  </nav>
+
+
+  <div class="container-fluid text-center">
+    <div class="row content">
+      <div class="col-sm-2 sidenav">
+      </div>
+
+
+      <div class="col-sm-8 text-center" style="margin-top:200px;">
+        <h1>Welcome to Fire Detection Tool</h1>
+        <p>Lorem ipsum dolor sitamet, consectetur adipiscing elit , sed do eiusmod tempor incididunt ut
+          labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <hr><br />
+
+        <form action="/predict" method="post" enctype="multipart/form-data">
+          <input type="file" id="actual-btn" name="file" hidden />
+          <label for="actual-btn">Choose Image</label>
+
+          <button type="submit" id="actual-btn2" hidden>Upload & Predict</button>
+          <label style="background:#39415c;" for="actual-btn2">Upload & Predict</label>
+        </form>
+
+
+
+        <p style="margin-top:300px">Metehan Çetinkaya <br />330126</p>
+
+      </div>
+
+
+      <div class="col-sm-2 sidenav">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
