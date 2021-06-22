@@ -68,7 +68,7 @@ def predict():
                   result = "Undefined"
                 return render_template('predict.html', result = result, user_image = file_path)
         except Exception as e:
-            return "Unable to read the file. Please check if the file extension is correct."
+            return "Unable to read the file. Please check if the file extension is correct. !!"
 
     return render_template('predict.html')
 
