@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fire Detection Tool</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0px;
+            border-radius: 0;
+            background-color: white;
+        }
+
+        h1 {
+            color: #2c2c51;
+            font-family: 'Trebuchet MS', sans-serif;
+            font-weight: 900;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #2c2c51;
+        }
+
+        label {
+            background-color: #39415c;
+            color: white;
+            padding: 0.6rem;
+            padding-right: 30px;
+            padding-left: 30px;
+            font-family: sans-serif;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 0.4rem;
+            font-size: 20px;
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+
+        #file-chosen {
+            margin-left: 0.3rem;
+            font-family: sans-serif;
+        }
+
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        .row.content {
+            height: 450px
+        }
+
+        /* Set gray background color and 100% height */
+
+        /* Set black background color, white text and some padding */
+        footer {
+            background-color: #f1f1f1;
+            color: white;
+            padding: 15px;
+        }
+
+        body {
+            padding-bottom: 20px;
+        }
+
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+
+            .row.content {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: #f8f9fa;" >
+
+    <nav style="color:white;" class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <span style="font-size:13px; color:black;padding-right: 10px; margin:10px 0 10px 0"
+                class="navbar-toggler-icon"></span>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-sm-2 sidenav">
+            </div>
+
+
+            <div class="col-sm-8 text-center" style="margin-top:250px;">
+
+
+                <div class="container">
+                    <h1 style="margin-bottom:55px">How do I use it?</h1>
+                    <div class="row">
+                        <div class="col col-lg-4">
+                            <img src="../static/1.png" style="height:150px; margin-bottom:25px">
+                            <p style="font-size: 25px; text-align:left; margin-left:20px">1 <strong>Choose Image</strong></p>
+                            <p style="font-size: 17px; font-weight:500; text-align:left; margin-left:40px">Collect the images you want to test and select them with the Choose button.</p>
+                        </div>
+                        <div class="col col-lg-4">
+                            <img src="../static/2.png" style="height:150px; margin-bottom:25px">
+                            <p style="font-size: 25px; text-align:left; margin-left:20px">2 <strong>Predict</strong></p>
+                            <p style="font-size: 17px; font-weight:500; text-align:left; margin-left:40px">Make predictions on the images you choose and wait for the result.</p>
+                        </div>
+                        <div class="col col-lg-4">
+                            <img src="../static/3.png" style="height:150px; margin-bottom:25px">
+                            <p style="font-size: 25px; text-align:left; margin-left:20px">3 <strong>Result</strong></p>
+                            <p style="font-size: 17px; font-weight:500; text-align:left; margin-left:40px">You can see if there is a fire in the image on the result screen.</p>
+                        </div>
+                        <br />
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-sm-2 sidenav">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
